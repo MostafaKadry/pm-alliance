@@ -1,0 +1,45 @@
+.horizontal-slider {
+    padding-bottom: 28px;
+}
+
+.example-track.example-track-0 {
+    background: #14a077;
+}
+.horizontal-slider .example-track {
+    top: 20px;
+    height: 5px;
+    border: none;
+    border-radius: 30px;
+}
+
+.example-track.example-track-1 {
+    background: #d3d3d3;
+}
+.example-thumb {
+    top: 10px;
+    font-size: 0;
+    height: 24px;
+    width: 24px;
+    border-radius: 50%;
+    border: 2px solid #14a077;
+    background: #ffffff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+.group-range-title span {
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 26px;
+    color: #14a077;
+    margin-left: 4px;
+}
+// range two
+.horizontal-slider.st2 {
+    .example-track.example-track-0,
+    .example-track.example-track-2 {
+        background: #d3d3d3;
+    }
+    .example-track.example-track-1 {
+        background: #14a077;
+    }
+}
