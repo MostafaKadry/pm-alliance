@@ -75,22 +75,23 @@ function Footer(props) {
               <div className="footer-cl-2">
                 <h6 className="ft-title">Quick Links</h6>
                 <ul className={`navigation-menu-footer d-flex ${flex}`}>
-                  <li>
-                    {" "}
-                    <Link to="/jobsPlatform-FrontEnd/">Home</Link>{" "}
-                  </li>
+
                   <li>
                     {" "}
                     <Link to="/jobsPlatform-FrontEnd/aboutus">About Us</Link>{" "}
                   </li>
                   <li>
                     {" "}
-                    <Link to="/jobsPlatform-FrontEnd/insights">Insights</Link>{" "}
+                    <Link to="/jobsPlatform-FrontEnd/">Job Board</Link>{" "}
+                  </li>
+                  <li>
+                    {" "}
+                    <Link to="/jobsPlatform-FrontEnd/PPM Tools">PPM Tools</Link>{" "}
                   </li>
                   <li>
                     {" "}
                     <Link to="/jobsPlatform-FrontEnd/AI-Resume-Editor/Job-Matcher">
-                      AI Resume Editor / Job Matcher
+                      Eli - AI
                     </Link>{" "}
                   </li>
                   <li>

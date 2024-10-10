@@ -250,7 +250,7 @@ function Iconbox3(props) {
                     </svg>{" "}
                   </span>
                   Professionals looking for practical methodologies, tools, and
-                  insights to enhance project delivery and success.
+                  PPM Tools to enhance project delivery and success.
                 </li>
               </ul>
             </div>

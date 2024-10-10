@@ -73,19 +73,7 @@ function AboutUs(props) {
                 <div className="nav-wrap">
                   <nav className="main-nav mobile">
                     <ul id="menu-primary-menu" className="menu">
-                      <li className="menu-item current-item">
-                        <Link
-                          to="/jobsPlatform-FrontEnd/"
-                          className="iteam-menu"
-                          onClick={() => {
-                            handleToggle("home");
-                          }}
-                        >
-                          Home
-                        </Link>
-                      </li>
-
-                      <li className="menu-item">
+                    <li className="menu-item">
                         <Link
                           to="/jobsPlatform-FrontEnd/aboutus"
                           className="iteam-menu"
@@ -96,16 +84,29 @@ function AboutUs(props) {
                           About Us
                         </Link>
                       </li>
+                      <li className="menu-item current-item">
+                        <Link
+                          to="/jobsPlatform-FrontEnd/"
+                          className="iteam-menu"
+                          onClick={() => {
+                            handleToggle("home");
+                          }}
+                        >
+                          Job Board
+                        </Link>
+                      </li>
+
+
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/insights"
+                          to="/jobsPlatform-FrontEnd/PPM Tools"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
                           }}
                         >
-                          Insights
+                          PPM Tools
                         </Link>
                       </li>
 
@@ -117,7 +118,7 @@ function AboutUs(props) {
                             handleToggle("employers");
                           }}
                         >
-                          AI Resume Editor / Job Matcher
+                           Eli - AI
                         </Link>
                       </li>
 

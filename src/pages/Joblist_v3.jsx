@@ -70,17 +70,7 @@ function Joblist_v3(_props) {
                 <div className="nav-wrap">
                   <nav className="main-nav mobile">
                     <ul id="menu-primary-menu" className="menu">
-                      <li className="menu-item current-item">
-                        <Link
-                          to="/jobsPlatform-FrontEnd/"
-                          className="iteam-menu"
-                          onClick={() => {
-                            handleToggle("home");
-                          }}
-                        >
-                          Home
-                        </Link>
-                      </li>
+
 
                       <li className="menu-item">
                         <Link
@@ -93,16 +83,26 @@ function Joblist_v3(_props) {
                           About Us
                         </Link>
                       </li>
-
+                      <li className="menu-item current-item">
+                        <Link
+                          to="/jobsPlatform-FrontEnd/"
+                          className="iteam-menu"
+                          onClick={() => {
+                            handleToggle("home");
+                          }}
+                        >
+                          Job Board
+                        </Link>
+                      </li>
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/insights"
+                          to="/jobsPlatform-FrontEnd/PPM Tools"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
                           }}
                         >
-                          Insights
+                          PPM Tools
                         </Link>
                       </li>
 
@@ -114,7 +114,7 @@ function Joblist_v3(_props) {
                             handleToggle("employers");
                           }}
                         >
-                          AI Resume Editor / Job Matcher
+                           Eli - AI
                         </Link>
                       </li>
 

@@ -7,7 +7,7 @@ export const fetchFilteredJobs = async (query) => {
     try {
         // queries must be like : { results_per_page, keyword, title, location, company, salary, pageNo }
         // at least keyword and location must me entered.
-        const response = await axios.get(`http://localhost:5000/api/jobs/filter?${query}`);
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_SERVER_URI}/api/jobs/filter?${query}`);
         console.log(response.data);
         // Create a new array with the img property added to each job
         const jobsWithImage = response?.data.map(job => ({ ...job, img }));
@@ -24,7 +24,7 @@ export const categoryFilteredJobs = async (query) => {
     try {
         // queries must be like : { results_per_page, keyword, title, location, company, salary, pageNo }
         // at least keyword and location must me entered.
-        const response = await axios.get('https://jobs-platform-back-end.vercel.app/api/jobs/category', {
+        const response = await axios.get(`${process.env.REACT_APP_BACKEND_SERVER_URI}/api/jobs/category`, {
             params: serializedQuery // Axios will automatically format the query string correctly
         });
         console.log(response.data);

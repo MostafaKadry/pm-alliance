@@ -1,33 +1,33 @@
 import React, { useState, useEffect } from 'react';
 import { useSelector, useDispatch } from 'react-redux';
-// import RangeOne from "../range-slider";
-// import RangeTwo from "../range-slider/RangleTwo";
+import RangeOne from "../range-slider";
+import RangeTwo from "../range-slider/RangleTwo";
 import SelectLocation from "../Banner/dropdown";
 import Dropdown from "react-dropdown";
 import { fetchJobs } from '../../redux/actions/jobActions';
 import { jobTitles } from '../../assets/database/jobTitles';
  
-// const select2 = [
-//   { value: "s1", label: "On-site" },
-//   { value: "s2", label: "Remote" },
-//   { value: "s3", label: "Freelancer" },
-// ];
+const select2 = [
+  { value: "s1", label: "On-site" },
+  { value: "s2", label: "Remote" },
+  { value: "s3", label: "Freelancer" },
+];
 
-// const select4 = [
-//   { value: "s1", label: "Posted Anytime" },
-//   { value: "s2", label: "Last 24 hours" },
-//   { value: "s3", label: "Last Week" },
-//   { value: "s4", label: "Last month" },
-// ];
-// const select5 = [
-//   { value: "s1", label: "All Seniority Levels" },
-//   { value: "s2", label: "Junior" },
-//   { value: "s3", label: "Senior" },
-// ];
-// const select6 = [
-//   { value: "s1", label: "Company" },
-//   { value: "s2", label: "Website" },
-// ];
+const select4 = [
+  { value: "s1", label: "Posted Anytime" },
+  { value: "s2", label: "Last 24 hours" },
+  { value: "s3", label: "Last Week" },
+  { value: "s4", label: "Last month" },
+];
+const select5 = [
+  { value: "s1", label: "All Seniority Levels" },
+  { value: "s2", label: "Junior" },
+  { value: "s3", label: "Senior" },
+];
+const select6 = [
+  { value: "s1", label: "Company" },
+  { value: "s2", label: "Website" },
+];
 
 function Sidebar(_props) {
   const jobTypeMap = {
@@ -59,9 +59,9 @@ function Sidebar(_props) {
   const [selectedCategory, setSelectedCategory] = useState(Object.keys(jobTitles)[0]); // Default to the first category
   const [jobTitle, setJobTitle] = useState(jobTitles[Object.keys(jobTitles)[0]].titles[0].value); // Default to the first title in the first category
   const [jobType, setJobType] = useState("0");
-  // const [postedTime, setPostedTime] = useState(select4[0].value);
-  // const [seniorityLevel, setSeniorityLevel] = useState(select5[0].value);
-  // const [company, setCompany] = useState(select6[0].value);
+  const [postedTime, setPostedTime] = useState(select4[0].value);
+  const [seniorityLevel, setSeniorityLevel] = useState(select5[0].value);
+  const [company, setCompany] = useState(select6[0].value);
   const [error, setError] = useState(false);
   const loading = useSelector((state) => state.loading); 
    // Extract categories and job titles
@@ -174,9 +174,9 @@ useEffect(() => {
             />
           </div>
         </div> 
-        {/* <RangeTwo title="Salary:" /> */}
-        {/* <RangeOne miles="Miles" title="Radius:" /> */}
-        {/* <div className="group-form">
+        <RangeTwo title="Salary:" />
+        <RangeOne miles="Miles" title="Radius:" />
+        <div className="group-form">
           <label className="title">select period</label>
           <div className="group-input">
             <Dropdown
@@ -187,9 +187,9 @@ useEffect(() => {
               value={select4.find(item => item.value === postedTime)}
             />
           </div>
-        </div> */}
+        </div>
        
-        {/* <div className="group-form">
+        <div className="group-form">
           <label className="title">All Seniority Levels</label>
           <div className="group-input">
             <Dropdown
@@ -199,9 +199,9 @@ useEffect(() => {
               value={select5.find(item => item.value === seniorityLevel)}
             />
           </div>
-        </div> */}
+        </div>
 
-        {/* <div className="group-form">
+        <div className="group-form">
           <label className="title">Company</label>
           <div className="group-input">
             <Dropdown
@@ -211,7 +211,7 @@ useEffect(() => {
               value={select6.find(item => item.value === company)}
             />
           </div>
-        </div> */}
+        </div>
         <button type="submit" onClick={handleSubmit}>
           {loading ? 'Loading...' : 'Find Jobs'}
         </button>

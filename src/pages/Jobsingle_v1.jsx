@@ -157,13 +157,13 @@ const renderContractTypeLink = (type) => {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/insights"
+                          to="/jobsPlatform-FrontEnd/PPM Tools"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
                           }}
                         >
-                          Insights
+                          PPM Tools
                         </Link>
                       </li>
 
@@ -175,7 +175,7 @@ const renderContractTypeLink = (type) => {
                             handleToggle("employers");
                           }}
                         >
-                          AI Resume Editor / Job Matcher
+                           Eli - AI
                         </Link>
                       </li>
 

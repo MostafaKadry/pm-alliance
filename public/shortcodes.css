@@ -11831,7 +11831,7 @@ input[type="number"]::-webkit-inner-spin-button {
   line-height: 26px;
   position: relative;
   display: block;
-  padding-left: 55px;
+  /* padding-left: 55px; */
 }
 
 .react-dropdown .Dropdown-menu {

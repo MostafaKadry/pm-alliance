@@ -125,13 +125,13 @@ function Home_v1(props) {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/insights"
+                          to="/jobsPlatform-FrontEnd/PPM Tools"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
                           }}
                         >
-                          Insights
+                          PPM Tools
                         </Link>
                       </li>
 
@@ -143,7 +143,7 @@ function Home_v1(props) {
                             handleToggle("employers");
                           }}
                         >
-                          AI Resume Editor / Job Matcher
+                           Eli - AI
                         </Link>
                       </li>
 

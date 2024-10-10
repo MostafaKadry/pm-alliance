@@ -17,7 +17,7 @@ function SignUp() {
     }
 
     try {
-      const res = await axios.post('http://localhost:5000/api/auth/signup', { email, password });
+      const res = await axios.post(`${process.env.REACT_APP_BACKEND_SERVER_URI}/api/auth/signup`, { email, password });
       // Save token to localStorage or state
       localStorage.setItem('token', res.data.token);
       alert('Signed up successfully');

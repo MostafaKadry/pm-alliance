@@ -89,13 +89,13 @@ function Login(props) {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/insights/"
+                          to="/jobsPlatform-FrontEnd/PPM Tools/"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
                           }}
                         >
-                          Insights
+                          PPM Tools
                         </Link>
                       </li>
 
@@ -107,7 +107,7 @@ function Login(props) {
                             handleToggle("employers");
                           }}
                         >
-                          AI Resume Editor / Job Matcher
+                           Eli - AI
                         </Link>
                       </li>
 
