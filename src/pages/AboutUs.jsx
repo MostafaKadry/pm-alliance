@@ -54,7 +54,7 @@ function AboutUs(props) {
         <div className="widget-filter">
           <div className="mobile-header">
             <div id="logo" className="logo">
-              <Link to="/jobsPlatform-FrontEnd/">
+              <Link to="/">
                 <image className="site-logo" src={logo} alt="Image" />
               </Link>
             </div>
@@ -75,7 +75,7 @@ function AboutUs(props) {
                     <ul id="menu-primary-menu" className="menu">
                     <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/aboutus"
+                          to="/aboutus"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("job");
@@ -86,7 +86,7 @@ function AboutUs(props) {
                       </li>
                       <li className="menu-item current-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/"
+                          to="/"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("home");
@@ -100,7 +100,7 @@ function AboutUs(props) {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/PPM Tools"
+                          to="/PPM Tools"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
@@ -112,7 +112,7 @@ function AboutUs(props) {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/AI-Resume-Editor/Job-Matcher"
+                          to="/AI-Resume-Editor/Job-Matcher"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
@@ -124,7 +124,7 @@ function AboutUs(props) {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/reviews"
+                          to="/reviews"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
@@ -136,7 +136,7 @@ function AboutUs(props) {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/newsletter"
+                          to="/newsletter"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
@@ -152,7 +152,7 @@ function AboutUs(props) {
             </div>
           </Tabs>
           <div className="header-customize-item button">
-            <Link to="/jobsPlatform-FrontEnd/login">Login</Link>
+            <Link to="/login">Login</Link>
           </div>
         </div>
       </div>
@@ -181,7 +181,7 @@ function AboutUs(props) {
                   </div>
                   <div className="box-content">
                     <h6 className="box-title">
-                      <Link to="/jobsPlatform-FrontEnd/Blogsingle_v1">Regular updates</Link>
+                      <Link to="/Blogsingle_v1">Regular updates</Link>
                     </h6>
                     <p>
                       On job openings from leading companies seeking experienced
@@ -197,7 +197,7 @@ function AboutUs(props) {
                   </div>
                   <div className="box-content">
                     <h6 className="box-title">
-                      <Link to="/jobsPlatform-FrontEnd/Blogsingle_v1">
+                      <Link to="/Blogsingle_v1">
                         Special job opportunities{" "}
                       </Link>
                     </h6>

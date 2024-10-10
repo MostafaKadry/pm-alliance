@@ -30,7 +30,7 @@ const handleClick = async (e) => {
 try {
       // Dispatch the fetchJobs action with the query string
       await dispatch(RandomJobsAction());
-      navigate(`/jobsPlatform-FrontEnd/job-list-sidebar`);
+      navigate(`/job-list-sidebar`);
       console.log("Random Jobs fetched successfully");
     } catch (error) {
       console.error("Error fetching job data:", error);
@@ -82,10 +82,10 @@ try {
                     </div>
                     <div className="box-content">
                       <h4>
-                        <Link to={`/jobsPlatform-FrontEnd/jobsingle_v1/${idx.jobID}`}>{idx.category}</Link>
+                        <Link to={`/jobsingle_v1/${idx.jobID}`}>{idx.category}</Link>
                       </h4>
                       <h3>
-                        <Link to={`/jobsPlatform-FrontEnd/jobsingle_v1/${idx.jobID}`}> {idx.title} </Link>
+                        <Link to={`/jobsingle_v1/${idx.jobID}`}> {idx.title} </Link>
                         <span className="icon-bolt"></span>
                       </h3>
                       <ul>

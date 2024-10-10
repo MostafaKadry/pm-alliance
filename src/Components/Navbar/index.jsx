@@ -36,7 +36,6 @@ function Header({ clname = "", handleMobile }) {
 
   // Toggle the dropdown menu visibility
   const toggleDropdown = (e) => {
-    console.log("clicked")
     e.stopPropagation(); // Prevent any event propagation issues
     setDropdownOpen((prevState) => !prevState); // Toggle dropdown state
   };
@@ -81,7 +80,7 @@ function Header({ clname = "", handleMobile }) {
             <div className="sticky-area-wrap">
               <div className="header-ct-left m-0 p-0">
                 <div id="logo" className="logo m-0 p-0">
-                  <Link to="/jobsPlatform-FrontEnd/">
+                  <Link to="/">
                     <img
                       className="site-logo p-3"
                       id="trans-logo"
@@ -97,30 +96,30 @@ function Header({ clname = "", handleMobile }) {
                   <nav id="main-nav" className="main-nav">
                     <ul id="menu-primary-menu" className="menu">
                     <li className={`menu-item`}>
-                        <NavLink to="/jobsPlatform-FrontEnd/aboutus">
+                        <NavLink to="/aboutus">
                           About Us
                         </NavLink>
                       </li> 
                       <li className={`menu-item`}>
-                        <NavLink to="/jobsPlatform-FrontEnd/">Job Board</NavLink>
+                        <NavLink to="/">Job Board</NavLink>
                       </li>
                       <li className="menu-item">
-                        <NavLink to="/jobsPlatform-FrontEnd/PPM Tools">
+                        <NavLink to="/PPM Tools">
                           PPM Tools
                         </NavLink>
                       </li>
                       <li className="menu-item">
-                        <NavLink to="/jobsPlatform-FrontEnd/AI-Resume-Editor/Job-Matcher">
+                        <NavLink to="/AI-Resume-Editor/Job-Matcher">
                           Eli - AI
                         </NavLink>
                       </li>
                       <li className="menu-item">
-                        <NavLink to="/jobsPlatform-FrontEnd/reviews">
+                        <NavLink to="/reviews">
                           Reviews
                         </NavLink>
                       </li>
                       <li className="menu-item">
-                        <NavLink to="/jobsPlatform-FrontEnd/newsletter">
+                        <NavLink to="/newsletter">
                           Newsletter
                         </NavLink>
                       </li>
@@ -148,24 +147,22 @@ function Header({ clname = "", handleMobile }) {
                          // Handle icon click to toggle dropdown
                          onClick={(e)=> toggleDropdown(e)}
                       />
-                      {dropdownOpen && (
-                        <div className="dropdown-menu">
+                        {dropdownOpen && (
+                          <div className={`dropdown-menu ${dropdownOpen ? 'open' : 'closed'}`}>
                           <div className="dropdown-item" onClick={handleLogout}>
-                            Logout
+                          Logout
                           </div>
-                          <div
-                            className="dropdown-item"
-                            onClick={() => setDropdownOpen(false)}
-                          >
-                            Close
+                          <div className="dropdown-item close-btn" onClick={() => setDropdownOpen(false)}>
+                          Close
                           </div>
-                        </div>
+                          </div>
+
                       )}
                     </div>
                   ) : (
                     <div className="button">
                       <Link
-                        to="/jobsPlatform-FrontEnd/login"
+                        to="/login"
                         className="btn-login"
                       >
                         Login

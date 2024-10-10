@@ -78,25 +78,25 @@ function Footer(props) {
 
                   <li>
                     {" "}
-                    <Link to="/jobsPlatform-FrontEnd/aboutus">About Us</Link>{" "}
+                    <Link to="/aboutus">About Us</Link>{" "}
                   </li>
                   <li>
                     {" "}
-                    <Link to="/jobsPlatform-FrontEnd/">Job Board</Link>{" "}
+                    <Link to="/">Job Board</Link>{" "}
                   </li>
                   <li>
                     {" "}
-                    <Link to="/jobsPlatform-FrontEnd/PPM Tools">PPM Tools</Link>{" "}
+                    <Link to="/PPM Tools">PPM Tools</Link>{" "}
                   </li>
                   <li>
                     {" "}
-                    <Link to="/jobsPlatform-FrontEnd/AI-Resume-Editor/Job-Matcher">
+                    <Link to="/AI-Resume-Editor/Job-Matcher">
                       Eli - AI
                     </Link>{" "}
                   </li>
                   <li>
                     {" "}
-                    <Link to="/jobsPlatform-FrontEnd/newsletter">Newsletter</Link>{" "}
+                    <Link to="/newsletter">Newsletter</Link>{" "}
                   </li>
                 </ul>
               </div>

@@ -61,7 +61,7 @@ function FormContent() {
   useEffect(() => {
     if (navigated) {
         // Navigate when jobs are fetched
-        navigate(`/jobsPlatform-FrontEnd/job-list-sidebar?${query}`, { state: { jobData: jobs } });
+        navigate(`/job-list-sidebar?${query}`, { state: { jobData: jobs } });
         // Set navigated to true to trigger useEffect
         setNavigated(true);
     }

@@ -21,7 +21,7 @@ function SignUp() {
       // Save token to localStorage or state
       localStorage.setItem('token', res.data.token);
       alert('Signed up successfully');
-      window.location = '/jobsPlatform-FrontEnd/login';
+      window.location = '/login';
     } catch (err) {
       setError(err.response.data.msg || 'Error signing up');
     }
@@ -105,18 +105,18 @@ function SignUp() {
                   <div className="group-ant-choice st">
                     <div className="sub-ip">
                       <input type="checkbox" />I agree to the
-                      <Link to="/jobsPlatform-FrontEnd/termsofuse"> Terms of User</Link>
+                      <Link to="/termsofuse"> Terms of User</Link>
                     </div>
                   </div>
                   <button onClick={handleSubmit}>Register</button>
                   <div className="sign-up">
                     Already have an account?
-                    <Link to="/jobsPlatform-FrontEnd/login">&nbsp;Login Here</Link>
+                    <Link to="/login">&nbsp;Login Here</Link>
                   </div>
                 </form>
               </TabPanel>
               <TabPanel className="inner animation-tab">
-                <form action="/jobsPlatform-FrontEnd/">
+                <form action="/">
                   <div className="ip">
                     <label>
                       Username or email address<span>*</span>
@@ -170,13 +170,13 @@ function SignUp() {
                   <div className="group-ant-choice st">
                     <div className="sub-ip">
                       <input type="checkbox" />I agree to the
-                      <Link to="/jobsPlatform-FrontEnd/termsofuse"> Terms of User</Link>
+                      <Link to="/termsofuse"> Terms of User</Link>
                     </div>
                   </div>
                   <button onClick={handleSubmit}>Register</button>
                   <div className="sign-up">
                     Already have an account?
-                    <Link to="/jobsPlatform-FrontEnd/login">&nbsp;Login Here</Link>
+                    <Link to="/login">&nbsp;Login Here</Link>
                   </div>
                 </form>
               </TabPanel>

@@ -27,7 +27,7 @@ function SignIn() {
       localStorage.setItem('email', email);
       dispatch(setUser(res.data.token)); // Dispatch action to set user
       alert('Logged in successfully');
-      navigate('/jobsPlatform-FrontEnd/');
+      navigate('/');
     } catch (err) {
       setError(err.response.data.msg || 'Error logging in');
     }
@@ -59,7 +59,7 @@ function SignIn() {
           dispatch(setUser(userData));
 
           // Navigate to home or any protected route
-          navigate('/jobsPlatform-FrontEnd');
+          navigate('/');
         } catch (error) {
           console.error('Error fetching user details:', error);
         }
@@ -158,7 +158,7 @@ function SignIn() {
               </Link> */}
               
               <div className="sign-up">
-                Not registered yet? <Link to="/jobsPlatform-FrontEnd/createaccount">Sign Up</Link>
+                Not registered yet? <Link to="/createaccount">Sign Up</Link>
               </div>
             </form>
           </div>

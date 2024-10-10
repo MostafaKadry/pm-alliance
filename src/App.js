@@ -23,39 +23,39 @@ import { useSelector } from 'react-redux';
 const App = () => {
   const user = useSelector((state) => state.user.user);
   let routes = useRoutes([
-    { path: "/jobsPlatform-FrontEnd/", element: <Home_v1 /> },
-    { path: "/jobsPlatform-FrontEnd/aboutus", element: <AboutUs /> },
+    { path: "/", element: <Home_v1 /> },
+    { path: "/aboutus", element: <AboutUs /> },
     {
-      path: "/jobsPlatform-FrontEnd/jobsingle_v1/:jobID",
+      path: "/jobsingle_v1/:jobID",
       element: <ProtectedRoute element={<Joblist_v1 />} />,
     },
     {
-      path: "/jobsPlatform-FrontEnd/job-list-sidebar",
+      path: "/job-list-sidebar",
       element: <ProtectedRoute element={<Joblist_v3 />} />,
     },
     {
-      path: "/jobsPlatform-FrontEnd/job-list-sidebar/category/:title",
+      path: "/job-list-sidebar/category/:title",
       element: <ProtectedRoute element={<Joblist_v3 />} />,
     },
     {
-      path: "/jobsPlatform-FrontEnd/PPM Tools",
+      path: "/PPM Tools",
       element: <ProtectedRoute element={<PPMTools />} />,
     },
     {
-      path: "/jobsPlatform-FrontEnd/AI-Resume-Editor/Job-Matcher",
+      path: "/AI-Resume-Editor/Job-Matcher",
       element: <ProtectedRoute element={<AI />} />,
     },
     {
-      path: "/jobsPlatform-FrontEnd/reviews",
+      path: "/reviews",
       element: <ProtectedRoute element={<Reviews />} />,
     },
     {
-      path: "/jobsPlatform-FrontEnd/newsletter",
+      path: "/newsletter",
       element: <ProtectedRoute element={<Newsletter />} />,
     },
-    { path: "/jobsPlatform-FrontEnd/login", element: <Login /> },
-    { path: "/jobsPlatform-FrontEnd/loginWithLinkedIn", element: <Login /> },
-    { path: "/jobsPlatform-FrontEnd/createaccount", element: <SignUp /> },
+    { path: "/login", element: <Login /> },
+    { path: "/loginWithLinkedIn", element: <Login /> },
+    { path: "/createaccount", element: <SignUp /> },
     
    { path:"*", element:<NotFound /> }
   ]);

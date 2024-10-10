@@ -51,7 +51,7 @@ function Joblist_v3(_props) {
         <div className="widget-filter">
           <div className="mobile-header">
             <div id="logo" className="logo">
-              <Link to="/jobsPlatform-FrontEnd/">
+              <Link to="/">
                 <img className="site-logo" src={logo} alt="..." />
               </Link>
             </div>
@@ -74,7 +74,7 @@ function Joblist_v3(_props) {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/aboutus"
+                          to="/aboutus"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("job");
@@ -85,7 +85,7 @@ function Joblist_v3(_props) {
                       </li>
                       <li className="menu-item current-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/"
+                          to="/"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("home");
@@ -96,7 +96,7 @@ function Joblist_v3(_props) {
                       </li>
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/PPM Tools"
+                          to="/PPM Tools"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
@@ -108,7 +108,7 @@ function Joblist_v3(_props) {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/AI-Resume-Editor/Job-Matcher"
+                          to="/AI-Resume-Editor/Job-Matcher"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
@@ -120,7 +120,7 @@ function Joblist_v3(_props) {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/reviews"
+                          to="/reviews"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
@@ -132,7 +132,7 @@ function Joblist_v3(_props) {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/newsletter"
+                          to="/newsletter"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
@@ -148,7 +148,7 @@ function Joblist_v3(_props) {
             </div>
           </Tabs>
           <div className="header-customize-item button">
-            <Link to="/jobsPlatform-FrontEnd/login">Login</Link>
+            <Link to="/login">Login</Link>
           </div>
         </div>
       </div>

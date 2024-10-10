@@ -149,10 +149,10 @@ const sortedData = (Array.isArray(data) ? [...data] : []).sort((a, b) => {
                             </div>
                             <div className="box-content">
                               <h4>
-                                <Link to={`/jobsPlatform-FrontEnd/jobsingle_v1/${idx.jobID}`}>{idx.category}</Link>
+                                <Link to={`/jobsingle_v1/${idx.jobID}`}>{idx.category}</Link>
                               </h4>
                               <h3>
-                                <Link to={`/jobsPlatform-FrontEnd/jobsingle_v1/${idx.jobID}`}>{idx.title} </Link>
+                                <Link to={`/jobsingle_v1/${idx.jobID}`}>{idx.title} </Link>
                                 <span className="icon-bolt"></span>
                               </h3>
                               <ul>
@@ -218,10 +218,10 @@ const sortedData = (Array.isArray(data) ? [...data] : []).sort((a, b) => {
                               </div>
                               <div className="box-content">
                                 <h4>
-                                  <Link to={`/jobsPlatform-FrontEnd/jobsingle_v1/${idx.jobID}`}>{idx.category}</Link>
+                                  <Link to={`/jobsingle_v1/${idx.jobID}`}>{idx.category}</Link>
                                 </h4>
                                 <h3>
-                                  <Link to={`/jobsPlatform-FrontEnd/jobsingle_v1/${idx.jobID}`}>{idx.title} </Link>
+                                  <Link to={`/jobsingle_v1/${idx.jobID}`}>{idx.title} </Link>
                                   <span className="icon-bolt"></span>
                                 </h3>
                                 <ul>
@@ -280,7 +280,7 @@ const sortedData = (Array.isArray(data) ? [...data] : []).sort((a, b) => {
                             </div>
                           </div>
                           <Link
-                            to={`/jobsPlatform-FrontEnd/jobsingle_v1/${idx.jobID}`}
+                            to={`/jobsingle_v1/${idx.jobID}`}
                             className="jobtex-link-item"
                             tabIndex="0"
                           ></Link>

@@ -5,6 +5,6 @@ import { useSelector } from 'react-redux';
 
 const ProtectedRoute = ({ element }) => {
 const user = useSelector((state) => state.user.user); // Get user from Redux state
-return user ? element : <Navigate to="/jobsPlatform-FrontEnd/login/" />; // Redirect based on user presence};
+return user ? element : <Navigate to="/login" />; // Redirect based on user presence};
 }
 export default ProtectedRoute;

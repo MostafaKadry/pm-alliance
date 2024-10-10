@@ -26,7 +26,7 @@ const handleCategoryClick = async (title) => {
     // Dispatch the fetchRandomJobs action based on category title
     await dispatch(categoryFilteredJobsAction({category: title}));
     // Redirect to the job list page with jobData passed through state
-    navigate(`/jobsPlatform-FrontEnd/job-list-sidebar/category/${title}`);
+    navigate(`/job-list-sidebar/category/${title}`);
   } catch (error) {
     console.error("Error fetching category jobs:", error);
   }
@@ -37,7 +37,7 @@ const handleClick = async (e) => {
 try {
       // Dispatch the fetchJobs action with the query string
       await dispatch(RandomJobsAction());
-      navigate(`/jobsPlatform-FrontEnd/job-list-sidebar`);
+      navigate(`/job-list-sidebar`);
       console.log("Random Jobs fetched successfully");
     } catch (error) {
       console.error("Error fetching job data:", error);

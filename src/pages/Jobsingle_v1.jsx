@@ -112,7 +112,7 @@ const renderContractTypeLink = (type) => {
         <div className="widget-filter">
           <div className="mobile-header">
             <div id="logo" className="logo">
-              <Link to="/jobsPlatform-FrontEnd/">
+              <Link to="/">
                 <image className="site-logo" src={logo} alt="Image" />
               </Link>
             </div>
@@ -133,7 +133,7 @@ const renderContractTypeLink = (type) => {
                     <ul id="menu-primary-menu" className="menu">
                       <li className="menu-item current-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/"
+                          to="/"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("home");
@@ -145,7 +145,7 @@ const renderContractTypeLink = (type) => {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/aboutus"
+                          to="/aboutus"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("job");
@@ -157,7 +157,7 @@ const renderContractTypeLink = (type) => {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/PPM Tools"
+                          to="/PPM Tools"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
@@ -169,7 +169,7 @@ const renderContractTypeLink = (type) => {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/AI-Resume-Editor/Job-Matcher"
+                          to="/AI-Resume-Editor/Job-Matcher"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
@@ -181,7 +181,7 @@ const renderContractTypeLink = (type) => {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/reviews"
+                          to="/reviews"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
@@ -193,7 +193,7 @@ const renderContractTypeLink = (type) => {
 
                       <li className="menu-item">
                         <Link
-                          to="/jobsPlatform-FrontEnd/newsletter"
+                          to="/newsletter"
                           className="iteam-menu"
                           onClick={() => {
                             handleToggle("employers");
@@ -209,7 +209,7 @@ const renderContractTypeLink = (type) => {
             </div>
           </Tabs>
           <div className="header-customize-item button">
-            <Link to="/jobsPlatform-FrontEnd/login">Login</Link>
+            <Link to="/login">Login</Link>
           </div>
         </div>
       </div>
