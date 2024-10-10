@@ -1,7 +1,5 @@
 import React from "react";
-
 import { BrowserRouter as Router, useRoutes } from "react-router-dom";
-
 import Home_v1 from "./pages/Home_v1";
 import Joblist_v1 from "./pages/Jobsingle_v1";
 import Joblist_v3 from "./pages/Joblist_v3";
