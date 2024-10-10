@@ -1,0 +1,24 @@
+{
+  "files": {
+    "main.css": "/static/css/main.b7580488.css",
+    "main.js": "/static/js/main.14a66ee9.js",
+    "static/js/483.56e67720.chunk.js": "/static/js/483.56e67720.chunk.js",
+    "static/media/Untitled design.png": "/static/media/Untitled design.96f761a281885b4428b0.png",
+    "static/media/singlejob.png": "/static/media/singlejob.f5db622b517592a24390.png",
+    "static/media/logo.jpeg": "/static/media/logo.7513625afa08455e2b1e.jpeg",
+    "static/media/thumb2.png": "/static/media/thumb2.d6a1d76668688b8a3764.png",
+    "static/media/thumb-review.png": "/static/media/thumb-review.6ac97f60f429ebe01523.png",
+    "static/media/print_transparent.svg": "/static/media/print_transparent.e3e6bff9e3459934f91610a039e40f94.svg",
+    "static/media/work-icon-2.jpg": "/static/media/work-icon-2.40ea60b96f64e6a28cc1.jpg",
+    "static/media/work-icon-1.jpg": "/static/media/work-icon-1.f62d2a83b6bb984287af.jpg",
+    "static/media/shape.png": "/static/media/shape.d5238e0594bab70fc617.png",
+    "index.html": "/index.html",
+    "main.b7580488.css.map": "/static/css/main.b7580488.css.map",
+    "main.14a66ee9.js.map": "/static/js/main.14a66ee9.js.map",
+    "483.56e67720.chunk.js.map": "/static/js/483.56e67720.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.b7580488.css",
+    "static/js/main.14a66ee9.js"
+  ]
+}
