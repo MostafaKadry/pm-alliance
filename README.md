@@ -1,6 +1,6 @@
 # PM Alliance
 
-PM Alliance is a project management platform 
+PM Alliance is a Job Search platform
 
 ## Features
 
